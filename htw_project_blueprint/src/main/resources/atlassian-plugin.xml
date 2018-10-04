@@ -1,0 +1,244 @@
+<atlassian-plugin key="${atlassian.plugin.key}" name="${project.name}" plugins-version="2">
+	<plugin-info>
+		<description>${project.description}</description>
+		<version>${project.version}</version>
+		<vendor name="${project.organization.name}" url="${project.organization.url}" />
+		<param name="plugin-icon">images/pluginIcon.png</param>
+		<param name="plugin-logo">images/pluginLogo.png</param>
+	</plugin-info>
+
+	<!-- add our i18n resource -->
+	<resource type="i18n" name="i18n" location="htw_project_blueprint" />
+
+	<!-- add our web resources -->
+	<web-resource key="htw_project_blueprint-resources" name="htw_project_blueprint Web Resources">
+		<dependency>com.atlassian.auiplugin:ajs</dependency>
+
+		<transformation extension="soy">
+			<transformer key="soyTransformer">
+				<functions>com.atlassian.confluence.plugins.soy:soy-core-functions
+				</functions>
+			</transformer>
+		</transformation>
+		<transformation extension="js">
+			<transformer key="jsI18n" />
+		</transformation>
+
+		<resource type="download" name="htw_project_blueprint.css" location="/css/htw_project_blueprint.css" />
+		
+		
+		<resource type="download" name="htw_project_blueprint.js" location="/js/htw_project_blueprint.js" />
+		<resource type="download" name="images/" location="/images" />
+		<resource type="download" name="dialog-page.js" location="/soy/dialog-page.soy" />
+
+		<!--<context>htw_project_blueprint</context> -->
+		<context>create-space</context>
+	</web-resource>
+
+	<!-- ******************************** Content Templates ******************************** -->
+	<content-template key="project-space-homepage-template"
+		i18n-name-key="confluence.blueprints.space.project.homepage.name">
+		<description key="confluence.blueprints.space.project.homepage.desc" />
+		<resource name="template" type="download" location="/xml/home.xml" />
+		<context-provider class="ch.htwchur.confluence.blueprint.project.ChildPageContextProvider" />
+	</content-template>
+
+	<content-template key="public-data" i18n-name-key="confluence.blueprints.space.child.public-data.name">
+		<description key="confluence.blueprints.space.child.public-data.desc" />
+		<resource name="template" type="download" location="/xml/public-data.xml" />
+		<context-provider class="ch.htwchur.confluence.blueprint.project.ChildPageContextProvider" />
+	</content-template>
+
+	<content-template key="contacts" i18n-name-key="confluence.blueprints.space.child.contacts.name">
+		<resource name="template" type="download" location="/xml/contacts.xml" />
+		<context-provider class="ch.htwchur.confluence.blueprint.project.ChildPageContextProvider" />
+	</content-template>
+
+
+	<!-- ******************************** Project Lead Content Templates ******************************** -->
+
+	<content-template key="project-prework"
+		i18n-name-key="confluence.blueprints.space.child.project-prework.name">
+		<resource name="template" type="download" location="/xml/project-lead/project-prework.xml" />
+		<context-provider class="ch.htwchur.confluence.blueprint.project.ChildPageContextProvider" />
+	</content-template>
+
+	<content-template key="parent-project-lead"
+		i18n-name-key="confluence.blueprints.space.child.parent-project-lead.name">
+		<description key="confluence.blueprints.space.child.parent-project-lead.desc" />
+		<resource name="template" type="download" location="/xml/project-lead/parent-project-lead.xml" />
+		<context-provider class="ch.htwchur.confluence.blueprint.project.ChildPageContextProvider" />
+	</content-template>
+
+	<content-template key="open-project"
+		i18n-name-key="confluence.blueprints.space.child.open-project.name">
+		<description key="confluence.blueprints.space.project.open-project.desc" />
+		<resource name="template" type="download" location="/xml/project-lead/open-project.xml" />
+		<context-provider class="ch.htwchur.confluence.blueprint.project.ChildPageContextProvider" />
+	</content-template>
+
+	<content-template key="project-details"
+		i18n-name-key="confluence.blueprints.space.child.project-details.name">
+		<description key="confluence.blueprints.space.child.project-details.desc" />
+		<resource name="template" type="download" location="/xml/project-lead/project-details.xml" />
+		<context-provider class="ch.htwchur.confluence.blueprint.project.ChildPageContextProvider" />
+	</content-template>
+	
+		<content-template key="project-controlling-personel"
+		i18n-name-key="confluence.blueprints.space.child.project-controlling-personel.name">
+		<description key="confluence.blueprints.space.child.project-controlling-personel.desc" />
+		<resource name="template" type="download" location="/xml/project-lead/project-controlling-personel.xml" />
+		<context-provider class="ch.htwchur.confluence.blueprint.project.ChildPageContextProvider" />
+	</content-template>
+
+	<content-template key="project-controlling-current"
+		i18n-name-key="confluence.blueprints.space.child.project-controlling-current.name">
+		<description key="confluence.blueprints.space.child.project-controlling-current.desc" />
+		<resource name="template" type="download" location="/xml/project-lead/project-controlling-current.xml" />
+		<context-provider class="ch.htwchur.confluence.blueprint.project.ChildPageContextProvider" />
+	</content-template>
+
+	<content-template key="confidental" i18n-name-key="confluence.blueprints.space.child.confidental.name">
+		<resource name="template" type="download" location="/xml/project-lead/confidental.xml" />
+		<context-provider class="ch.htwchur.confluence.blueprint.project.ChildPageContextProvider" />
+	</content-template>
+
+	<content-template key="controlling-reports"
+		i18n-name-key="confluence.blueprints.space.child.controlling-reports.name">
+		<resource name="template" type="download" location="/xml/project-lead/controlling-reports.xml" />
+		<context-provider class="ch.htwchur.confluence.blueprint.project.ChildPageContextProvider" />
+	</content-template>
+
+	<content-template key="lessons-learned"
+		i18n-name-key="confluence.blueprints.space.child.lessons-learned.name">
+		<resource name="template" type="download" location="/xml/project-lead/lessons-learned.xml" />
+		<context-provider class="ch.htwchur.confluence.blueprint.project.ChildPageContextProvider" />
+	</content-template>
+
+	<content-template key="end-report" i18n-name-key="confluence.blueprints.space.child.end-report.name">
+		<resource name="template" type="download" location="/xml/project-lead/end-report.xml" />
+		<context-provider class="ch.htwchur.confluence.blueprint.project.ChildPageContextProvider" />
+	</content-template>
+
+	<!-- ******************************** Project Execution Content Templates ******************************** -->
+	<content-template key="parent-project-execution"
+		i18n-name-key="confluence.blueprints.space.child.parent-project-execution.name">
+		<resource name="template" type="download" location="/xml/project-execution/parent-project-execution.xml" />
+		<context-provider class="ch.htwchur.confluence.blueprint.project.ChildPageContextProvider" />
+	</content-template>
+	<content-template key="task" i18n-name-key="confluence.blueprints.space.child.task.name">
+		<resource name="template" type="download" location="/xml/project-execution/task.xml" />
+		<context-provider class="ch.htwchur.confluence.blueprint.project.ChildPageContextProvider" />
+	</content-template>
+	<content-template key="ap1" i18n-name-key="confluence.blueprints.space.child.ap1.name">
+		<resource name="template" type="download" location="/xml/project-execution/ap1.xml" />
+		<context-provider class="ch.htwchur.confluence.blueprint.project.ChildPageContextProvider" />
+	</content-template>
+	<content-template key="ap2" i18n-name-key="confluence.blueprints.space.child.ap2.name">
+		<resource name="template" type="download" location="/xml/project-execution/ap2.xml" />
+		<context-provider class="ch.htwchur.confluence.blueprint.project.ChildPageContextProvider" />
+	</content-template>
+
+
+	<!-- ******************************** Upload Content Templates ******************************** -->
+	<content-template key="parent-upload"
+		i18n-name-key="confluence.blueprints.space.child.parent-upload.name">
+		<resource name="template" type="download" location="/xml/upload/parent-upload.xml" />
+		<context-provider class="ch.htwchur.confluence.blueprint.project.ChildPageContextProvider" />
+	</content-template>
+
+	<content-template key="classification"
+		i18n-name-key="confluence.blueprints.space.child.classification.name">
+		<resource name="template" type="download" location="/xml/upload/classification.xml" />
+		<context-provider class="ch.htwchur.confluence.blueprint.project.ChildPageContextProvider" />
+	</content-template>
+
+	<!-- ******************************** Ressources Content Templates ******************************** -->
+	<content-template key="parent-ressources"
+		i18n-name-key="confluence.blueprints.space.child.parent-ressources.name">
+		<resource name="template" type="download" location="/xml/ressources/parent-ressources.xml" />
+		<context-provider class="ch.htwchur.confluence.blueprint.project.ChildPageContextProvider" />
+	</content-template>
+
+	<content-template key="decisions" i18n-name-key="confluence.blueprints.space.child.decisions.name">
+		<resource name="template" type="download" location="/xml/ressources/decisions.xml" />
+		<context-provider class="ch.htwchur.confluence.blueprint.project.ChildPageContextProvider" />
+	</content-template>
+
+	<content-template key="notes" i18n-name-key="confluence.blueprints.space.child.notes.name">
+		<resource name="template" type="download" location="/xml/ressources/notes.xml" />
+		<context-provider class="ch.htwchur.confluence.blueprint.project.ChildPageContextProvider" />
+	</content-template>
+
+	<content-template key="links" i18n-name-key="confluence.blueprints.space.child.links.name">
+		<resource name="template" type="download" location="/xml/ressources/links.xml" />
+		<context-provider class="ch.htwchur.confluence.blueprint.project.ChildPageContextProvider" />
+	</content-template>
+
+	<content-template key="literaturlist"
+		i18n-name-key="confluence.blueprints.space.child.literaturlist.name">
+		<resource name="template" type="download" location="/xml/ressources/literaturlist.xml" />
+		<context-provider class="ch.htwchur.confluence.blueprint.project.ChildPageContextProvider" />
+	</content-template>
+
+
+	<!-- ******************************** Web Items ******************************** -->
+
+	<web-item key='project-space-blueprint-item' i18n-name-key='confluence.blueprints.space.project.name'
+		section='system.create.space.dialog/content'>
+		<description key='confluence.blueprints.space.project.description' />
+		<param name='blueprintKey' value='project-space-blueprint' />
+	</web-item>
+
+	<!-- ******************************** Blueprint Definition ******************************** -->
+
+	<space-blueprint key="project-space-blueprint" i18n-name-key="confluence.blueprints.space.project.name"
+		category="projekt">
+
+		<content-template ref="project-space-homepage-template">
+
+			<content-template ref="public-data" />
+
+			<content-template ref="parent-project-lead">
+				<content-template ref="open-project">
+					<content-template ref="project-details" />
+					<content-template ref="project-controlling-current" />
+					<content-template ref="project-controlling-personel" />
+				</content-template>
+				<content-template ref="project-prework" />
+				<content-template ref="confidental" />
+				<content-template ref="controlling-reports" />
+				<content-template ref="lessons-learned" />
+				<content-template ref="end-report" />
+
+			</content-template>
+			<content-template ref="parent-project-execution">
+				<content-template ref="task" />
+				<content-template ref="ap1" />
+				<content-template ref="ap2" />
+			</content-template>
+
+			<content-template ref="parent-ressources">
+				<content-template ref="decisions" />
+				<content-template ref="notes" />
+				<content-template ref="links" />
+				<content-template ref="literaturlist" />
+			</content-template>
+
+			<content-template ref="parent-upload">
+				<content-template ref="classification" />
+			</content-template>
+			<content-template ref="contacts" />
+
+		</content-template>
+
+		<content-template ref="project-controlling-personel" />
+		<dialog-wizard key="project-space-blueprint-wizard">
+			<dialog-page id="projectSpaceId" template-key="Confluence.SpaceBlueprints.Project.dialogForm"
+				title-key="confluence.blueprints.space.project.dialog.create.title"
+				description-header-key="confluence.blueprints.space.project.dialog.create.heading"
+				description-content-key="confluence.blueprints.space.project.dialog.create.description" last="true"
+				 />
+		</dialog-wizard>
+	</space-blueprint>
+</atlassian-plugin>

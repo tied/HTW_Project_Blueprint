@@ -1,0 +1,112 @@
+
+<p class="auto-cursor-target"><br /></p><ac:structured-macro ac:name="tip" ac:schema-version="1" ac:macro-id="edb2b3e5-ec00-4171-becc-47d790b86a75"><ac:rich-text-body>
+<p>F&uuml;r die Projekter&ouml;ffnung bitte alle Felder ausf&uuml;llen.</p></ac:rich-text-body></ac:structured-macro>
+<h2>&Ouml;ffentliche Angaben</h2><ac:structured-macro ac:name="excerpt" ac:schema-version="1" ac:macro-id="99e3fa5f-70d6-4da1-83a8-af2fa71b8533"><ac:parameter ac:name="atlassian-macro-output-type">INLINE</ac:parameter><ac:rich-text-body>
+<p class="auto-cursor-target"><br /></p>
+<p class="auto-cursor-target"><br /></p>
+<table class="relative-table wrapped" style="width: 94.8942%;"><colgroup><col style="width: 48.1236%;" /><col style="width: 51.8932%;" /></colgroup>
+<tbody>
+<tr>
+<td>
+<h2 class="content-wrapper">Grunddaten</h2>
+<p><ac:structured-macro ac:name="live-template" ac:schema-version="1" ac:macro-id="f1aa86b8-339c-40d6-bac2-c08167ae98c4"><ac:parameter ac:name="template">Projekt Grunddaten</ac:parameter><ac:parameter ac:name="type">template</ac:parameter></ac:structured-macro></p></td>
+<td>
+<h2 class="content-wrapper">Keyfactbox</h2>
+<p><ac:structured-macro ac:name="live-template" ac:schema-version="1" ac:macro-id="cc4c46f9-4aa0-415a-b652-4ae6353e9738"><ac:parameter ac:name="template">Projekt Keyfactbox</ac:parameter><ac:parameter ac:name="type">template</ac:parameter></ac:structured-macro></p></td></tr></tbody></table>
+<p class="auto-cursor-target"><br /></p>
+<p class="auto-cursor-target"><br /></p></ac:rich-text-body></ac:structured-macro>
+<h2>Interne Angaben</h2>
+<table class="relative-table wrapped" style="width: 94.736%;"><colgroup><col style="width: 48.1066%;" /><col style="width: 51.8743%;" /></colgroup>
+<tbody>
+<tr>
+<td>
+<div class="content-wrapper">
+<h2>Grunddaten Erweitert</h2>
+<p><ac:structured-macro ac:name="live-template" ac:schema-version="1" ac:macro-id="0fd4d043-1499-4a02-9606-e36a9c263472"><ac:parameter ac:name="template">Projekt Grunddaten Erweitert</ac:parameter><ac:parameter ac:name="type">template</ac:parameter></ac:structured-macro></p></div></td>
+<td>
+<div class="content-wrapper">
+<h2>Projekt Details</h2>
+<p><ac:structured-macro ac:name="live-template" ac:schema-version="1" ac:macro-id="fbecc551-1020-4d6f-9228-2acd51e97968"><ac:parameter ac:name="template">Projekt Details Intern</ac:parameter><ac:parameter ac:name="type">template</ac:parameter></ac:structured-macro></p></div></td></tr></tbody></table>
+<p class="auto-cursor-target"><br /></p><ac:structured-macro ac:name="html" ac:schema-version="1" ac:macro-id="79e2baf2-e1a9-4302-bdf9-5ba13328368e"><ac:plain-text-body><![CDATA[<script>
+/**
+ * This script checks via REST API if the specified content property for this space exist.
+ * If not, this is the first time this page  is opened. The "Edit Content" Mode is activated
+ * and the content property will be created.
+ */
+var correctSite = false;
+var url = window.location;
+var urlArray = url.pathname.split("/display/");
+if (urlArray.length > 0) {
+    var space = urlArray[1].split('/')[0];
+    console.log("HTW Blueprint: current space =" + space);
+    var baseUrl = url.protocol + "//" + url.host;;
+    var restUrl = baseUrl + "/rest/api/space/" + space + "/property";
+    correctSite = true;
+}
+else {
+    console.log("HTW Blueprint: Can not open Edit. Wrong URL.");
+}
+
+AJS.toInit(function () {
+    window.onload = (function () {
+
+        if (correctSite) {
+            jQuery.ajax({
+                type: "GET",
+                url: restUrl,
+                dataType: 'json',
+                async: false,
+                success: function (resultData) {
+                    if (checkIfVisited(resultData) == false) {
+                        console.log("HTW Blueprint: Project not initalized. Open Edit.");
+                        updateContentProperty();
+                        document.getElementById("edit-content").click();
+                    }
+                    else {
+                        console.log("HTW Blueprint: No Edit needed. Project already initialized.");
+                    }
+
+                },
+                error: function (msg, url, line) {
+                    console.log("HTW Blueprint: Error while requesting space content property: msg = " + msg + ", url = " + url + ", line = " + line);
+                }
+
+            });
+        }
+    });
+});
+
+
+function checkIfVisited(resultData) {
+    var results = resultData["results"];
+    var visited = false;
+    for (var key in results) {
+        if (results[key]["key"] == "htwEditProps" && results[key].value.initalized == "true") {
+            visited = true;
+        }
+    }
+    return visited;
+}
+
+
+function updateContentProperty() {
+
+    jQuery.ajax({
+        type: "POST",
+        url: restUrl,
+        dataType: 'json',
+        async: false,
+        contentType: 'application/json',
+        data: JSON.stringify({ "key": "htwEditProps", "value": { "initalized": "true" } }),
+        success: function (resultData) {
+            console.log("HTW Blueprint: update Data success:" + resultData)
+        },
+        error: function (msg, url, line) {
+            console.log("HTW Blueprint: Error while requesting space content property: msg = " + msg + ", url = " + url + ", line = " + line);
+        }
+
+    });
+}
+</script>
+]]></ac:plain-text-body></ac:structured-macro>
+<p class="auto-cursor-target"><br /></p>

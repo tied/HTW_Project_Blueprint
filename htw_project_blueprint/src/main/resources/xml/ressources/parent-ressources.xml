@@ -1,0 +1,6 @@
+<ac:layout><ac:layout-section ac:type="two_equal"><ac:layout-cell>
+<p><strong>Inhalte</strong></p>
+<p><ac:structured-macro ac:name="children" ac:schema-version="2" ac:macro-id="795a3aea-e605-48d0-be80-3cc4db640af8" /></p></ac:layout-cell><ac:layout-cell>
+<p class="auto-cursor-target"><br /></p><ac:structured-macro ac:name="panel" ac:schema-version="1" ac:macro-id="ad976824-e02b-4a45-8599-d2a981bd60f1"><ac:rich-text-body>
+<p><ac:structured-macro ac:name="recently-updated" ac:schema-version="1" ac:macro-id="368e774a-dba3-4154-8a7e-e4ddcf061790"><ac:parameter ac:name="types">page, comment, blogpost</ac:parameter><ac:parameter ac:name="max">10</ac:parameter><ac:parameter ac:name="hideHeading">true</ac:parameter><ac:parameter ac:name="theme">social</ac:parameter><ac:parameter ac:name="labels">ressource, literatur</ac:parameter></ac:structured-macro></p></ac:rich-text-body></ac:structured-macro>
+<p class="auto-cursor-target"><br /></p></ac:layout-cell></ac:layout-section></ac:layout>

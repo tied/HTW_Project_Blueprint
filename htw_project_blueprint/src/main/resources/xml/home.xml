@@ -1,0 +1,168 @@
+<ac:layout><ac:layout-section ac:type="two_right_sidebar"><ac:layout-cell>
+<p class="auto-cursor-target"><br /></p>
+<p class="auto-cursor-target"><br /></p><ac:structured-macro ac:name="report-table" ac:schema-version="1" ac:macro-id="77288e49-8793-4632-ba6c-4cf635d3c5c2"><ac:parameter ac:name="maxResults">1</ac:parameter><ac:parameter ac:name="displayTitles">false</ac:parameter><ac:parameter ac:name="class">projektinfo</ac:parameter><ac:rich-text-body>
+<p class="auto-cursor-target"><br /></p><ac:structured-macro ac:name="content-reporter" ac:schema-version="1" ac:macro-id="174d61ca-951f-44d9-972c-9514b6032930"><ac:parameter ac:name="scope">Projekter&ouml;ffnung</ac:parameter><ac:rich-text-body>
+<p class="auto-cursor-target"><br /></p></ac:rich-text-body></ac:structured-macro>
+<p class="auto-cursor-target"><br /></p><ac:structured-macro ac:name="report-column" ac:schema-version="1" ac:macro-id="7182527f-f73f-4cf0-9e5a-d9df8ae0681b"><ac:parameter ac:name="title">Lead</ac:parameter><ac:rich-text-body>
+<p><ac:structured-macro ac:name="report-info" ac:schema-version="1" ac:macro-id="06d08956-ad13-4c32-b318-fdb51e860a84"><ac:parameter ac:name="info">Lead (Abteilung)</ac:parameter><ac:parameter ac:name="">data:Lead</ac:parameter></ac:structured-macro></p></ac:rich-text-body></ac:structured-macro>
+<p class="auto-cursor-target"><br /></p><ac:structured-macro ac:name="report-column" ac:schema-version="1" ac:macro-id="665ca4f1-a978-4233-8174-31bca11d961c"><ac:parameter ac:name="title">BeteiligteInstitute</ac:parameter><ac:rich-text-body>
+<p><ac:structured-macro ac:name="report-info" ac:schema-version="1" ac:macro-id="62a6308d-51f1-44f9-93bc-a0ae9440a9e6"><ac:parameter ac:name="info">Beteiligte Institute</ac:parameter><ac:parameter ac:name="">data:BeteiligteInstitute</ac:parameter></ac:structured-macro></p></ac:rich-text-body></ac:structured-macro>
+<p class="auto-cursor-target"><br /></p><ac:structured-macro ac:name="report-column" ac:schema-version="1" ac:macro-id="f6d3b0cf-da5e-43ab-b9e8-afe38d8042ec"><ac:parameter ac:name="title">Projektfinanzierung</ac:parameter><ac:rich-text-body>
+<p><ac:structured-macro ac:name="report-info" ac:schema-version="1" ac:macro-id="b899b0a4-d662-4205-a1f7-c9fdeaab23cf"><ac:parameter ac:name="info">Projektfinanzierung</ac:parameter><ac:parameter ac:name="">data:Projektfinanzierung</ac:parameter></ac:structured-macro></p></ac:rich-text-body></ac:structured-macro>
+<p class="auto-cursor-target"><br /></p><ac:structured-macro ac:name="report-column" ac:schema-version="1" ac:macro-id="c63b3eae-0abb-490d-aeb7-60cae5e7f480"><ac:parameter ac:name="title">Forschungsfeld</ac:parameter><ac:rich-text-body>
+<p><ac:structured-macro ac:name="report-info" ac:schema-version="1" ac:macro-id="2bd5bb50-0653-4cf2-a7b9-8bca9e2953fa"><ac:parameter ac:name="info">Forschungsfeld</ac:parameter><ac:parameter ac:name="">data:Forschungsfeld</ac:parameter></ac:structured-macro></p></ac:rich-text-body></ac:structured-macro>
+<p class="auto-cursor-target"><br /></p><ac:structured-macro ac:name="report-column" ac:schema-version="1" ac:macro-id="064ef568-80e2-4353-bfa0-c73d8f0fdec5"><ac:parameter ac:name="title">Projektstart</ac:parameter><ac:rich-text-body>
+<p><ac:structured-macro ac:name="report-info" ac:schema-version="1" ac:macro-id="6f707c05-bc9c-427b-b06c-d0313f4c85eb"><ac:parameter ac:name="format">dd-MM-yyyy</ac:parameter><ac:parameter ac:name="info">Projektstart</ac:parameter><ac:parameter ac:name="">data:Projektstart</ac:parameter></ac:structured-macro></p></ac:rich-text-body></ac:structured-macro>
+<p class="auto-cursor-target"><br /></p><ac:structured-macro ac:name="report-column" ac:schema-version="1" ac:macro-id="c739880e-e81b-49e8-ad3c-87feaa8d85ac"><ac:parameter ac:name="title">Projektende</ac:parameter><ac:rich-text-body>
+<p><ac:structured-macro ac:name="report-info" ac:schema-version="1" ac:macro-id="5a4028f7-a5d5-4985-bec7-b155ff6da687"><ac:parameter ac:name="format">dd-MM-yyyy</ac:parameter><ac:parameter ac:name="info">Projektende</ac:parameter><ac:parameter ac:name="">data:Projektende</ac:parameter></ac:structured-macro></p></ac:rich-text-body></ac:structured-macro>
+<p class="auto-cursor-target"><br /></p><ac:structured-macro ac:name="report-column" ac:schema-version="1" ac:macro-id="20026790-24ca-4815-b9d7-616f41b5e3b7"><ac:parameter ac:name="title">Projektstatus</ac:parameter><ac:rich-text-body>
+<p><ac:structured-macro ac:name="report-info" ac:schema-version="1" ac:macro-id="12f9cd8c-1b82-4596-82d8-05cafc22f2b3"><ac:parameter ac:name="info">Projektstatus</ac:parameter><ac:parameter ac:name="">data:Projektstatus</ac:parameter></ac:structured-macro></p></ac:rich-text-body></ac:structured-macro>
+<p class="auto-cursor-target"><br /></p><ac:structured-macro ac:name="report-column" ac:schema-version="1" ac:macro-id="0df7813a-fe93-4e99-9fa7-74f9e37b116e"><ac:parameter ac:name="title">Projektnummer</ac:parameter><ac:rich-text-body>
+<p><ac:structured-macro ac:name="report-info" ac:schema-version="1" ac:macro-id="2ba87e24-872d-45c5-9682-933883efc3d1"><ac:parameter ac:name="default">nicht bewilligt</ac:parameter><ac:parameter ac:name="info">Projektstatus</ac:parameter><ac:parameter ac:name="">data:Projektnummer</ac:parameter></ac:structured-macro></p></ac:rich-text-body></ac:structured-macro>
+<p class="auto-cursor-target"><br /></p></ac:rich-text-body></ac:structured-macro><br /><ac:structured-macro ac:name="report-table" ac:schema-version="1" ac:macro-id="bae0e9e8-2ca6-4e20-8e36-13cf00ba1f64"><ac:parameter ac:name="maxResults">1</ac:parameter><ac:parameter ac:name="displayTitles">false</ac:parameter><ac:parameter ac:name="class">projekttags</ac:parameter><ac:rich-text-body>
+<p class="auto-cursor-target"><br /></p><ac:structured-macro ac:name="content-reporter" ac:schema-version="1" ac:macro-id="547cbb2f-6f33-4a75-badd-d80869d89674"><ac:parameter ac:name="scope">Projekter&ouml;ffnung</ac:parameter><ac:rich-text-body>
+<p class="auto-cursor-target"><br /></p></ac:rich-text-body></ac:structured-macro>
+<p class="auto-cursor-target"><br /></p><ac:structured-macro ac:name="report-column" ac:schema-version="1" ac:macro-id="092989f9-33ab-4f36-9d7d-2ce212bec289"><ac:parameter ac:name="title">Tags</ac:parameter><ac:rich-text-body>
+<p><ac:structured-macro ac:name="report-info" ac:schema-version="1" ac:macro-id="dbc71ad6-0774-45bd-90b2-09bd7c729e8d"><ac:parameter ac:name="info">Lead (Abteilung)</ac:parameter><ac:parameter ac:name="">data:Tags</ac:parameter></ac:structured-macro></p></ac:rich-text-body></ac:structured-macro>
+<p class="auto-cursor-target"><br /></p></ac:rich-text-body></ac:structured-macro>
+<p class="auto-cursor-target"><br /></p><ac:structured-macro ac:name="html" ac:schema-version="1" ac:macro-id="1c289554-18a1-4ab6-ac65-cf3f6eafe02a"><ac:plain-text-body><![CDATA[<style>
+.projektinfo {
+background: #B39048;
+color: white;
+border-radius: 3px;
+border: #B39048;
+}
+.projekttags {
+color: black;
+border-radius: 3px;
+border: #B39048;
+margin-top: -24px; 
+}
+.projektteam {
+color: black;
+border-radius: 3px;
+border: #B39048;
+margin-top: -4px; 
+} </style>]]></ac:plain-text-body></ac:structured-macro><br />
+<p><ac:structured-macro ac:name="create-blog-post" ac:schema-version="1" ac:macro-id="67db4a8a-97d7-4fe0-8258-661aaad12f92" /></p>
+<p><ac:structured-macro ac:name="blog-posts" ac:schema-version="1" ac:macro-id="f333ce46-d9b4-440f-a792-f12b07112f5f"><ac:parameter ac:name="max">3</ac:parameter><ac:parameter ac:name="sort">modified</ac:parameter><ac:parameter ac:name="time">10d</ac:parameter><ac:parameter ac:name="content">titles</ac:parameter></ac:structured-macro></p>
+<h2>Meine Aufgaben&nbsp;// <a href="http://confltest.fh-htwchur.ch:8090/pages/viewpage.action?pageId=41681173&amp;src=contextnavpagetreemode">Alle Aufgaben anzeigen</a></h2>
+<p><ac:structured-macro ac:name="tasks-report-macro" ac:schema-version="1" ac:macro-id="29aa59c4-e7d1-4458-8140-f3616aef6a7e"><ac:parameter ac:name="columns">description,duedate,location</ac:parameter><ac:parameter ac:name="spaces">PW</ac:parameter><ac:parameter ac:name="assignees"><ri:user ri:userkey="8a807e945f76f2b3015f779dab6e05ec" /></ac:parameter><ac:parameter ac:name="pageSize">10</ac:parameter></ac:structured-macro></p>
+<p><br /></p>
+<p><ac:structured-macro ac:name="excerpt-include" ac:schema-version="1" ac:macro-id="cd616eff-5c70-4251-b51c-793b4f97b98d"><ac:parameter ac:name=""><ac:link><ri:page ri:content-title="Projektausf&uuml;hrung" /></ac:link></ac:parameter></ac:structured-macro></p><ac:structured-macro ac:name="html" ac:schema-version="1" ac:macro-id="dc5b0a5c-6467-468e-bbef-19af996c9def"><ac:plain-text-body><![CDATA[<script>
+/**
+ * This script checks via Rest API if a specified content property for this space exist.
+ * if not (typically directly after the space is created) the content property is created 
+ * and a redirect to the "Projekt Erfassen" page is executed.
+ * 
+ *  
+ */
+var correctSite = false;
+var url = window.location;
+var urlArray = url.pathname.split("/display/");
+if (urlArray.length > 0) {
+  var space = urlArray[1].split('/')[0];
+  console.log("HTW Blueprint: current space =" + space);
+  var baseUrl = url.protocol + "//" + url.host;;
+  console.log(baseUrl);
+  var restUrl = baseUrl + "/rest/api/space/" + space + "/property";
+  correctSite = true;
+}
+else {
+  console.log("HTW Blueprint: Redirect Script will not be executet. This is not a Project Homepage.");
+}
+
+
+AJS.toInit(function () {
+  if (correctSite) {
+    jQuery.ajax({
+      type: "GET",
+      url: restUrl,
+      dataType: 'json',
+      async: false,
+      success: function (resultData) {
+        if (checkIfVisited(resultData) == false) {
+          console.log("HTW Blueprint: Project not initalized. Execute Redirect.");
+          createContentProperty();
+          redirect();
+        }
+        else {
+          console.log("HTW Blueprint: No Redirect necessary. Project already initialized.");
+        }
+
+      },
+      error: function (msg, url, line) {
+        console.log("HTW Blueprint: Error while requesting space content property: msg = " + msg + ", url = " + url + ", line = " + line);
+    }
+
+    });
+  }
+});
+
+function checkIfVisited(resultData) {
+  var results = resultData["results"];
+  var visited = false;
+  for (var key in results) {
+    if (results[key]["key"] == "htwSpaceProps" && results[key].value.spaceInitalized == "true") {
+        visited = true;
+    }
+  }
+  return visited;
+}
+
+function createContentProperty() {
+
+  jQuery.ajax({
+    type: "POST",
+    url: restUrl,
+    dataType: 'json',
+    async: false,
+    contentType: 'application/json',
+    data: JSON.stringify({ "key": "htwSpaceProps", "value": { "spaceInitalized": "true" } }),
+    success: function (resultData) {
+      console.log("HTW Blueprint: update Data success:" + resultData)
+    },
+    error: function (msg, url, line) {
+      console.log("HTW Blueprint: Error while requesting space content property: msg = " + msg + ", url = " + url + ", line = " + line);
+
+    }
+
+  });
+}
+
+function redirect() {
+  var newUrl = baseUrl + "/display/" + space + "/b%29+Projekt+Erfassen";
+  console.log("HTW Blueprint: redirect to " + newUrl);
+  window.location = newUrl;
+}
+</script>]]></ac:plain-text-body></ac:structured-macro></ac:layout-cell><ac:layout-cell>
+<p class="auto-cursor-target"><br /></p><ac:structured-macro ac:name="warning" ac:schema-version="1" ac:macro-id="82a6d289-29f2-43e2-bb4d-5ecaab85aef9"><ac:parameter ac:name="title">Mitteilungen der Projektleitung</ac:parameter><ac:rich-text-body>
+<p class="auto-cursor-target"><br /></p><ac:structured-macro ac:name="text-data" ac:schema-version="1" ac:macro-id="feadebed-503a-40aa-a5d4-ef6243793eae"><ac:parameter ac:name="name">Mitteilungen</ac:parameter><ac:parameter ac:name="atlassian-macro-output-type">INLINE</ac:parameter><ac:rich-text-body>
+<p><br /></p></ac:rich-text-body></ac:structured-macro>
+<p class="auto-cursor-target"><br /></p></ac:rich-text-body></ac:structured-macro>
+<p class="auto-cursor-target"><br /></p><ac:structured-macro ac:name="panel" ac:schema-version="1" ac:macro-id="a175e650-6bf4-4f0e-8074-4241f65d4e84"><ac:rich-text-body>
+<h2>Projektteam</h2><ac:structured-macro ac:name="report-table" ac:schema-version="1" ac:macro-id="33354a04-c440-4426-ae31-89c9dac2223a"><ac:parameter ac:name="maxResults">1</ac:parameter><ac:parameter ac:name="displayTitles">false</ac:parameter><ac:parameter ac:name="class">projektteam</ac:parameter><ac:rich-text-body>
+<p class="auto-cursor-target"><br /></p><ac:structured-macro ac:name="content-reporter" ac:schema-version="1" ac:macro-id="114da200-ac81-4fcf-9c5f-b3abfc3f8fef"><ac:parameter ac:name="scope">Projekter&ouml;ffnung</ac:parameter><ac:rich-text-body>
+<p class="auto-cursor-target"><br /></p></ac:rich-text-body></ac:structured-macro>
+<p class="auto-cursor-target"><br /></p><ac:structured-macro ac:name="report-column" ac:schema-version="1" ac:macro-id="9af75d19-5850-4b8f-89c9-c03a3e89108b"><ac:parameter ac:name="title">Projektleitung</ac:parameter><ac:rich-text-body>
+<p><ac:structured-macro ac:name="report-info" ac:schema-version="1" ac:macro-id="8335f6ab-d269-4183-a922-5596bf909544"><ac:parameter ac:name="info">Lead (Abteilung)</ac:parameter><ac:parameter ac:name="">data:Projektleitung</ac:parameter></ac:structured-macro></p></ac:rich-text-body></ac:structured-macro>
+<p class="auto-cursor-target"><br /></p><ac:structured-macro ac:name="report-column" ac:schema-version="1" ac:macro-id="fbd9912a-f60e-46a6-9276-d4cd47ab9fc0"><ac:parameter ac:name="title">Projektteam-Intern</ac:parameter><ac:rich-text-body>
+<p><ac:structured-macro ac:name="report-info" ac:schema-version="1" ac:macro-id="3ee96091-b88f-4a0a-a970-7c8aaf5c0ab1"><ac:parameter ac:name="info">Lead (Abteilung)</ac:parameter><ac:parameter ac:name="">data:Projektteam-Intern</ac:parameter></ac:structured-macro></p></ac:rich-text-body></ac:structured-macro>
+<p class="auto-cursor-target"><br /></p><ac:structured-macro ac:name="report-column" ac:schema-version="1" ac:macro-id="9741d00b-4186-44b2-98d9-0d82099c87e8"><ac:parameter ac:name="title">Projektteam-Extern</ac:parameter><ac:rich-text-body>
+<p><ac:structured-macro ac:name="report-info" ac:schema-version="1" ac:macro-id="a29234cd-6de9-421a-8db4-5d4b1e034ae2"><ac:parameter ac:name="info">Lead (Abteilung)</ac:parameter><ac:parameter ac:name="">data:Projektteam-Extern</ac:parameter></ac:structured-macro></p></ac:rich-text-body></ac:structured-macro>
+<p class="auto-cursor-target"><br /></p></ac:rich-text-body></ac:structured-macro>
+<p class="auto-cursor-target"><br /></p></ac:rich-text-body></ac:structured-macro>
+<p class="auto-cursor-target"><br /></p><ac:structured-macro ac:name="panel" ac:schema-version="1" ac:macro-id="f6f10305-21ac-44bb-85d2-038284cea01b"><ac:rich-text-body>
+<p><ac:structured-macro ac:name="recently-updated" ac:schema-version="1" ac:macro-id="ccc10067-a22c-427c-bbe0-f1b704dd7402"><ac:parameter ac:name="types">page, comment, blogpost</ac:parameter><ac:parameter ac:name="max">5</ac:parameter><ac:parameter ac:name="hideHeading">true</ac:parameter><ac:parameter ac:name="theme">social</ac:parameter></ac:structured-macro></p></ac:rich-text-body></ac:structured-macro>
+<p class="auto-cursor-target"><br /></p><ac:structured-macro ac:name="panel" ac:schema-version="1" ac:macro-id="c16ca808-287d-4f07-bae7-9bd50b966d9e"><ac:rich-text-body>
+<h2>Projektlinks</h2>
+<ul>
+<li>Noch keine Angabe</li>
+<li>z.B. Vorg&auml;nger-Projekt</li></ul>
+<h2>Wichtige Links</h2>
+<ul>
+<li>Noch keine Angabe</li>
+<li>z.B. Git Repository</li></ul></ac:rich-text-body></ac:structured-macro>
+<p><br /></p>
+<p><br /></p>
+<p><br /></p></ac:layout-cell></ac:layout-section></ac:layout>
